@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "text": "Are you a social person?"
+    },
+    {
+        "id": "2",
+        "text": "How energetic are you?"
+    },
+    {
+        "id": "3",
+        "text": "Do you enjoy being around children?"
+    },
+    {
+        "id": "4",
+        "text": "Do you like spending time with dogs?"
+    },
+    {
+        "id": "5",
+        "text": "How much do you enjoy playing?"
+    },
+    {
+        "id": "6",
+        "text": "How independent are you?"
+    }
+]

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Cat Are You?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="question-title">Question</h1>
+        <div class="question">
+            <label id="question-text"></label>
+            <input type="range" min="0" max="5" value="2" class="slider" id="answer-slider">
+        </div>
+        <div class="buttons">
+            <button id="prev-button" onclick="prevQuestion()">Previous</button>
+            <button id="next-button" onclick="nextQuestion()">Next</button>
+        </div>
+        <div class="cat-result" id="catResult">
+            <h2>You are a <span id="catName"></span>!</h2>
+            <img id="catImage" src="" alt="Cat Image">
+            <p id="catDescription"></p>
+            <a id="catLink" href="" target="_blank">Wikipedia</a>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

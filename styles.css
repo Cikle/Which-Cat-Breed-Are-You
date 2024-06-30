@@ -1,0 +1,85 @@
+body {
+  background: url('cat-paws-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* Add overflow hidden to contain animations */
+}
+
+.question {
+  margin: 20px 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  /* Smooth transition for opacity and transform */
+}
+
+.question-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.question-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.question-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.question-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.slider {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cat-result {
+  display: none;
+  margin-top: 20px;
+}
+
+.cat-result img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.catImage {
+  height: 200px;
+  width: auto;
+}

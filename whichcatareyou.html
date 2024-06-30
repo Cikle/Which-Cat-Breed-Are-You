@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Cat Are You?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="loadingScreen" class="loading-screen">
+            <video id="loadingVideo" class="loading-video" autoplay muted onended="showQuiz()">
+                <source src="loading.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <form id="cat-quiz" class="quiz-form">
+            <h1>Which Cat Are You?</h1>
+            <label for="social">Are you a social person?</label>
+            <input type="range" id="social" name="social" min="0" max="5">
+
+            <label for="energetic">How energetic are you?</label>
+            <input type="range" id="energetic" name="energetic" min="0" max="5">
+
+            <label for="independent">How independent are you?</label>
+            <input type="range" id="independent" name="independent" min="0" max="5">
+
+            <button type="button" onclick="showLoadingScreen()">Find Out</button>
+        </form>
+
+        <div id="result" class="result-container">
+            <h2 id="catName"></h2>
+            <img id="catImage" src="" alt="Cat Image">
+            <p id="catDescription"></p>
+            <a id="catLink" href="" target="_blank">Wikipedia</a>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
